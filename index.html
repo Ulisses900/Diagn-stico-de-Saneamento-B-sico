@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Brutos Detalhados - Saneamento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* Light background */
+        }
+        .container-wrapper {
+            max-width: 1200px;
+        }
+        /* Custom styling for table headers */
+        .table-header {
+            background-color: #4A5E8C; /* Primary accent color */
+            color: white;
+        }
+        .table-row-even {
+            background-color: #ffffff;
+        }
+        .table-row-odd {
+            background-color: #f0f4f8; /* Very light secondary background */
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="container-wrapper mx-auto py-10">
+        <header class="text-center mb-12 p-6 bg-white rounded-xl shadow-lg">
+            <h1 class="text-4xl font-extrabold text-[#3A3A3A] mb-2">Dados Brutos Detalhados</h1>
+            <p class="text-xl text-[#595959]">Pesquisa de Saneamento Básico | Sossego e Alto da Felicidade</p>
+        </header>
+
+        <!-- Seção Bairro Sossego -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-[#D9A441] mb-6 border-b-4 border-[#D9A441] pb-2">I. Bairro Sossego (N=30)</h2>
+            
+            <div class="overflow-x-auto shadow-xl rounded-xl">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="table-header">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wider rounded-tl-xl">Pergunta</th>
+                            <th scope="col" class="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wider">Resposta Detalhada</th>
+                            <th scope="col" class="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wider rounded-tr-xl">Contagem</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200 text-[#595959]">
+                        <tr class="table-row-even">
+                            <td rowspan="3" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#3A3A3A] align-top border-r border-gray-200">Q1: Condição da principal via de acesso?</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Ruim (Muitos buracos)</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">13</td>
+                        </tr>
+                        <tr class="table-row-even">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Regular</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">9</td>
+                        </tr>
+                        <tr class="table-row-even">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Boa</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">8</td>
+                        </tr>
+
+                        <tr class="table-row-odd">
+                            <td rowspan="2" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#3A3A3A] align-top border-r border-gray-200">Q2: Possui rede de esgoto?</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-semibold text-green-700">Sim</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">30 (100%)</td>
+                        </tr>
+                        <tr class="table-row-odd">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Não</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">0</td>
+                        </tr>
+
+                        <tr class="table-row-even">
+                            <td rowspan="2" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#3A3A3A] align-top border-r border-gray-200">Q3: Água encanada (Qualidade/Frequência)?</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Sim, boa e frequente</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">21 (70%)</td>
+                        </tr>
+                        <tr class="table-row-even">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">Sim, irregular/falta/ruim/não tanto</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">9 (30%)</td>
+                        </tr>
+
+                        <tr class="table-row-odd">
+                            <td rowspan="2" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#3A3A3A] align-top border-r border-gray-200">Q4: Rua possui calçamento?</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-semibold">Barro</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">30 (100%)</td>
+                        </tr>
+                        <tr class="table-row-odd">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Calçamento</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">0</td>
+                        </tr>
+
+                        <tr class="table-row-even">
+                            <td rowspan="2" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#3A3A3A] align-top border-r border-gray-200">Q5: Problemas de acúmulo de lixo?</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">Sim (Inclui "Às vezes")</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">21 (70%)</td>
+                        </tr>
+                        <tr class="table-row-even">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Não</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">9 (30%)</td>
+                        </tr>
+
+                        <tr class="table-row-odd">
+                            <td rowspan="2" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#3A3A3A] align-top border-r border-gray-200">Q6: Rua costuma alagar?</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">Sim</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">18 (60%)</td>
+                        </tr>
+                        <tr class="table-row-odd">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Não</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">12 (40%)</td>
+                        </tr>
+
+                        <tr class="table-row-even">
+                            <td rowspan="2" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#3A3A3A] align-top border-r border-gray-200">Q7: Moradores recebem orientações/campanhas?</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-semibold text-red-600">Não</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">30 (100%)</td>
+                        </tr>
+                        <tr class="table-row-even">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Sim</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">0</td>
+                        </tr>
+
+                        <tr class="table-row-odd">
+                            <td rowspan="3" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#3A3A3A] align-top border-r border-gray-200">Q8: Prefeitura realiza fiscalização/melhoria?</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">Não</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">21 (70%)</td>
+                        </tr>
+                        <tr class="table-row-odd">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Sim</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">5 (17%)</td>
+                        </tr>
+                        <tr class="table-row-odd">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Pouco</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">4 (13%)</td>
+                        </tr>
+
+                        <tr class="table-row-even">
+                            <td rowspan="2" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#3A3A3A] align-top border-r border-gray-200">Q9: Lugares com água parada (mosquitos)?</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">Sim</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">21 (70%)</td>
+                        </tr>
+                        <tr class="table-row-even">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Não</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">9 (30%)</td>
+                        </tr>
+
+                        <tr class="table-row-odd">
+                            <td rowspan="2" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#3A3A3A] align-top border-r border-gray-200 rounded-bl-xl">Q10: Locais adequados para descarte de lixo?</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">Não</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">18 (60%)</td>
+                        </tr>
+                        <tr class="table-row-odd">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Sim</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm rounded-br-xl">12 (40%)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Seção Bairro Alto da Felicidade -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-[#4A5E8C] mb-6 border-b-4 border-[#4A5E8C] pb-2">II. Bairro Alto da Felicidade (N=25)</h2>
+            
+            <div class="overflow-x-auto shadow-xl rounded-xl">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="table-header">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wider rounded-tl-xl">Pergunta</th>
+                            <th scope="col" class="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wider">Resposta Detalhada</th>
+                            <th scope="col" class="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wider rounded-tr-xl">Contagem</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200 text-[#595959]">
+                        <tr class="table-row-even">
+                            <td rowspan="3" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#3A3A3A] align-top border-r border-gray-200">Q1: Condição da principal via de acesso?</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Razoável/Regular</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">11 (44%)</td>
+                        </tr>
+                        <tr class="table-row-even">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Boa</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">10 (40%)</td>
+                        </tr>
+                        <tr class="table-row-even">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Ruim (Com buracos)</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">4 (16%)</td>
+                        </tr>
+
+                        <tr class="table-row-odd">
+                            <td rowspan="2" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#3A3A3A] align-top border-r border-gray-200">Q2: Possui rede de esgoto?</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-semibold text-red-600">Não</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">25 (100%)</td>
+                        </tr>
+                        <tr class="table-row-odd">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Sim</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">0</td>
+                        </tr>
+
+                        <tr class="table-row-even">
+                            <td rowspan="2" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#3A3A3A] align-top border-r border-gray-200">Q3: Água encanada (Qualidade/Frequência)?</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Sim, qualidade boa/geralmente boa/varia</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">23 (92%)</td>
+                        </tr>
+                        <tr class="table-row-even">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">Sim, com problemas (falta/suja)</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">2 (8%)</td>
+                        </tr>
+
+                        <tr class="table-row-odd">
+                            <td rowspan="2" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#3A3A3A] align-top border-r border-gray-200">Q4: Rua possui calçamento?</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-semibold">Barro</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">23 (92%)</td>
+                        </tr>
+                        <tr class="table-row-odd">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Calçada</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">2 (8%)</td>
+                        </tr>
+
+                        <tr class="table-row-even">
+                            <td rowspan="2" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#3A3A3A] align-top border-r border-gray-200">Q5: Problemas de acúmulo de lixo?</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-semibold text-red-600">Sim (Inclui "Às vezes")</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">25 (100%)</td>
+                        </tr>
+                        <tr class="table-row-even">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Não</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">0</td>
+                        </tr>
+
+                        <tr class="table-row-odd">
+                            <td rowspan="2" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#3A3A3A] align-top border-r border-gray-200">Q6: Rua costuma alagar?</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-semibold text-green-700">Não</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">25 (100%)</td>
+                        </tr>
+                        <tr class="table-row-odd">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Sim</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">0</td>
+                        </tr>
+
+                        <tr class="table-row-even">
+                            <td rowspan="2" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#3A3A3A] align-top border-r border-gray-200">Q7: Moradores recebem orientações/campanhas?</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-semibold text-red-600">Não</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">25 (100%)</td>
+                        </tr>
+                        <tr class="table-row-even">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Sim</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">0</td>
+                        </tr>
+
+                        <tr class="table-row-odd">
+                            <td rowspan="2" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#3A3A3A] align-top border-r border-gray-200">Q8: Prefeitura realiza fiscalização/melhoria?</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-semibold text-red-600">Não</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">25 (100%)</td>
+                        </tr>
+                        <tr class="table-row-odd">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Sim</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">0</td>
+                        </tr>
+
+                        <tr class="table-row-even">
+                            <td rowspan="2" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#3A3A3A] align-top border-r border-gray-200">Q9: Lugares com água parada (mosquitos)?</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-semibold text-red-600">Sim (Inclui "raramente" / "poucos")</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">25 (100%)</td>
+                        </tr>
+                        <tr class="table-row-even">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Não</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">0</td>
+                        </tr>
+
+                        <tr class="table-row-odd">
+                            <td rowspan="2" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#3A3A3A] align-top border-r border-gray-200 rounded-bl-xl">Q10: Locais adequados para descarte de lixo?</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-semibold text-red-600">Não</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">25 (100%)</td>
+                        </tr>
+                        <tr class="table-row-odd">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm">Sim</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm rounded-br-xl">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Seção Ruas Mencionadas -->
+        <section class="p-6 bg-white rounded-xl shadow-lg border-l-4 border-[#4A5E8C]">
+            <h3 class="text-2xl font-bold text-[#3A3A3A] mb-4">III. Ruas Mencionadas (Bairro Sossego)</h3>
+            <ul class="list-disc list-inside space-y-1 text-[#595959] text-lg pl-5">
+                <li>R. Senegal</li>
+                <li>R. Do Campo</li>
+                <li>R. Iolanda Barros Cavalcante</li>
+                <li>R. Areia Branca</li>
+                <li>R. Cavala</li>
+                <li>R. 615 Av. Armando</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>
